@@ -18,7 +18,7 @@ a{
 }
 
 body{
-    font-family: "Area Normal", sans-serif;
+    font-family: "playwrite-cc-de-grund", sans-serif;
     background-color: rgb(255, 244, 222);
 }
 
@@ -36,6 +36,7 @@ nav ul li{
     margin: 0rem 0.5rem;
 }
 nav a{
+    font-family: "the-seasons", sans-serif;
     font-weight:bold;
     color: rgb(80, 11, 11);
 }
@@ -53,8 +54,8 @@ h2{
     margin-bottom: 0.5rem;
     padding-top: 0.5rem;
 }
-h2 a:hover{
-    color: rgb(80, 11, 11);
+h2:hover{
+    color: rgb(107, 18, 18);
 }
 
 section.secondary h2{
@@ -99,7 +100,7 @@ aside p{
     margin-bottom: 1.5rem;
 }
 footer{
-    background-color: rgb(80, 11, 11);
+    border-top: solid 1px rgb(160, 35, 35);
     padding: 1rem 0.5rem;
     box-sizing: border-box;
 }
@@ -107,11 +108,11 @@ footer{
 figcaption{
     font-style: italic;
     color: rgb(182, 74, 74);
-    margin: 0.5rem 0rem 1rem 0.5rem;
+    margin: 1rem 0rem 1rem 0.5rem;
 }
 
 footer p{
-    color: rgb(238,238, 238);
+    color: rgb(80, 11, 11);
     margin:0;
     padding-left: 0.5rem;
 }
@@ -159,7 +160,7 @@ div.gallery-container input {
 main.photogallery{
     position: relative;
     overflow: hidden;
-    padding-bottom: calc(65% + 0.5em);
+    padding-bottom: calc(70% + 3.5em);
 }
 
 section.gallery figure{
@@ -256,10 +257,13 @@ button{
         margin-left: 0;
     }
     figcaption{
-        margin: 0.5rem 0 0.75rem 0;
+        margin: 1rem 0 0.75rem 0;
     }
     footer{
         padding-left: 0;
+    }
+    main.photogallery{
+        padding-bottom: calc(60% + 4em);
     }
 }
 
@@ -337,5 +341,45 @@ button{
     }
     section.secondary a p{
         flex: 0 0 4em;
+    }
+    main.photogallery{
+        padding-bottom: calc(60% + 2.5em);
+    }
+}
+@media screen and (prefers-color-scheme: dark){
+    body{
+        background-color: rgb(34, 1, 1);
+    }
+    nav a{
+        color: rgb(253, 225, 190);
+    }
+    nav a:hover, h2{
+        color: rgb(255, 207, 149);
+    }
+    h2:hover{
+        color: rgb(229, 166, 87);
+    }
+    section.teritiary h2{
+        border-top: solid 1px rgb(229, 166, 87);
+    }
+    main p, article p, aside p, footer p{
+        color: rgb(238,238, 238);
+    }
+    footer{
+        border-top: solid 1px rgb(229, 166, 87);
+    }
+    aside{
+        background-color: rgb(75, 8, 8);
+    }
+    figcaption{
+        color: rgb(151, 151, 151)
+    }
+    h1{
+        background-image: url("ThillanaLogo-alt.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    h1 img{
+        opacity: 0;
     }
 }
